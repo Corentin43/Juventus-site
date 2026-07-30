@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Juventus FC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="menu">
+        <li class="logo-li">
+            <a href="index.html" id="logo-trigger">
+                <img src="images/juventusblanc.png" alt="Logo Juventus FC" class="logo">
+            </a>
+        </li>
+		<li class="dropdown">
+			<a data-it="Rosa" data-fr="Effectif">Rosa</a>
+			<ul class="submenu">
+				<li><a href="Gardiens.html" data-it="Portieri" data-fr="Gardiens">Portieri</a></li>
+				<li><a href="Défenseurs.html" data-it="Difensori" data-fr="Défenseurs">Difensori</a></li>
+				<li><a href="Milieux.html" data-it="Centrocampisti" data-fr="Milieux">Centrocampisti</a></li>
+				<li><a href="Attaquants.html" data-it="Attaccanti" data-fr="Attaquants">Attaccanti</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="Palmarès.html" data-it="Palmarès" data-fr="Palmarès">
+			Palmarès
+			</a>
+		</li>
+		<li class="dropdown">
+			<a data-it="Maglie" data-fr="Maillots">Maglie</a>
+			<ul class="submenu">
+				<li>
+					<a href="maillots-2026.html" data-it="Maglie 2026" data-fr="Maillots 2026">
+					Maglie 2026
+					</a>
+				</li>
+				<li>
+					<a href="maillots historiques.html" data-it="Maglie storiche" data-fr="Maillots historiques">
+					Maglie storiche
+					</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="Matchs à venir.html" data-it="Prossime partite" data-fr="Matchs à venir">
+            Prossime partite
+			</a>
+		</li>
+		<li>
+			<a href="Histoire.html" data-it="Storia" data-fr="Histoire">
+            Storia
+			</a>
+		</li>
+		
+		<li>
+			<a href="Stade.html" data-it="Stadio" data-fr="Stade">
+            Stadio
+			</a>
+		</li>
+        <li>
+			<a href="Légendes.html" data-it="Leggende" data-fr="Légendes">
+            Leggende
+			</a>
+		</li>
+
+		<li>
+			<a href="Sponsors.html" data-it="Sponsor" data-fr="Sponsors">
+            Sponsor
+			</a>
+		</li>
+
+		<li>
+			<a href="Logos.html" data-it="I Loghi" data-fr="Les logos">
+            I Loghi
+			</a>
+		</li>
+    </ul>
+	<div class="lang-switch">
+		<span>FR</span>
+		<label class="switch">
+			<input type="checkbox" id="lang-toggle">
+			<span class="slider"></span>
+		</label>
+		<span>IT</span>
+	</div>
+</nav>
+<h1 
+class="titre"
+data-it="I Loghi"
+data-fr="Les logos">
+
+I Loghi
+
+</h1>
+<section id="sponsors-actuels">
+
+	<div class="ligne-trophee">
+		<div class="card-text">
+
+			<h3 data-it="Adidas" data-fr="Adidas">
+				Adidas
+			</h3>
+
+			<p 
+			data-it="Fondata nel 1949, adidas è una delle marche sportive più importanti al mondo. La collaborazione con la Juventus, iniziata nel 2015, ha unito tradizione e innovazione, creando maglie iconiche per i tifosi bianconeri. Insieme, adidas e Juventus rappresentano eleganza, performance e passione per il calcio."
+
+			data-fr="Fondée en 1949, adidas est l’une des marques de sport les plus importantes au monde. La collaboration avec la Juventus, commencée en 2015, a uni tradition et innovation, en créant des maillots iconiques pour les supporters bianconeri. Ensemble, adidas et la Juventus représentent l’élégance, la performance et la passion du football.">
+
+			Fondata nel 1949, adidas è una delle marche sportive più importanti al monde.
+			La collaborazione con la Juventus, iniziata nel 2015, ha unito tradizione e innovazione, creando maglie iconiche per i tifosi bianconeri.
+			Insieme, adidas e Juventus rappresentano eleganza, performance e passione per il calcio.<br>
+
+			</p>
+	
+			<!-- LE LIEN DOIT ÊTRE EN DEHORS DU <p> -->
+			<a href="https://www.adidas.fr/" target="_blank"
+			data-it="Sito ufficiale"
+			data-fr="Site officiel">
+
+			Sito ufficiale
+
+			</a>
+
+		</div>
+
+		<img src="images/logo1.png" alt="Adidas" class="icone-trophee sponsor-img">
+	</div>
+	
+    <div class="ligne-trophee reverse">
+		<div class="card-text">
+
+			<h3 data-it="Jeep" data-fr="Jeep">
+				Jeep
+			</h3>
+
+			<p 
+			data-it="Jeep è un partner storico della Juventus dal 2012. Il marchio rappresenta forza, avventura e spirito vincente, valori condivisi con il club bianconero."
+
+			data-fr="Jeep est un partenaire historique de la Juventus depuis 2012. La marque représente la force, l’aventure et l’esprit de victoire, des valeurs partagées avec le club bianconero.">
+
+			Jeep è un partner storico della Juventus dal 2012.
+			Il marchio rappresenta forza, avventura e spirito vincente, valori condivisi con il club bianconero.<br>
+
+			</p>
+
+			<!-- lien séparé -->
+			<a href="https://www.jeep.fr/" target="_blank"
+			data-it="Sito ufficiale"
+			data-fr="Site officiel">
+
+			Sito ufficiale
+
+			</a>
+
+		</div>
+
+		<img src="images/logo2.png" alt="Jeep" class="icone-trophee sponsor-img">
+	</div>
+	
+    <div class="ligne-trophee">
+		<div class="card-text">
+
+			<h3 data-it="Allianz" data-fr="Allianz">
+				Allianz
+			</h3>
+
+			<p 
+			data-it="Partner fedele della Juventus dal 2017."
+
+			data-fr="Partenaire fidèle de la Juventus depuis 2017.">
+
+			Partner fedele della Juventus dal 2017.<br>
+
+			</p>
+
+			<!-- lien séparé -->
+			<a href="https://www.allianz.fr/" target="_blank"
+			data-it="Sito ufficiale"
+			data-fr="Site officiel">
+
+			Sito ufficiale
+
+			</a>
+
+		</div>
+
+		<img src="images/logo3.png" alt="Allianz" class="icone-trophee sponsor-img">
+	</div>
+	
+    <div class="ligne-trophee reverse">
+		<div class="card-text">
+
+			<h3 data-it="EA Sports" data-fr="EA Sports">
+				EA Sports
+			</h3>
+
+			<p 
+			data-it="Partner digitale della Juventus dal 2022."
+
+			data-fr="Partenaire numérique de la Juventus depuis 2022.">
+
+			Partner digitale della Juventus dal 2022.<br>
+
+			</p>
+
+			<!-- lien séparé -->
+			<a href="https://www.ea.com/fr-fr" target="_blank"
+			data-it="Sito ufficiale"
+			data-fr="Site officiel">
+
+			Sito ufficiale
+
+			</a>
+
+		</div>
+
+		<img src="images/logo4.png" alt="EA Sports" class="icone-trophee sponsor-img">
+	</div>
+
+    <div class="ligne-trophee">
+		<div class="card-text">
+
+			<h3 data-it="WhiteBIT" data-fr="WhiteBIT">
+				WhiteBIT
+			</h3>
+
+			<p 
+			data-it="Partner ufficiale della Juventus dal 2022."
+
+			data-fr="Partenaire officiel de la Juventus depuis 2022.">
+
+			Partner ufficiale della Juventus dal 2022.<br>
+
+			</p>
+
+			<!-- lien séparé -->
+			<a href="https://whitebit.com/" target="_blank"
+			data-it="Sito ufficiale"
+			data-fr="Site officiel">
+
+			Sito ufficiale
+
+			</a>
+
+		</div>
+
+		<img src="images/logo5.png" alt="WhiteBIT" class="icone-trophee sponsor-img">
+	</div>
+	
+    <div class="ligne-trophee reverse">
+		<div class="card-text">
+
+			<h3 data-it="Cygames" data-fr="Cygames">
+				Cygames
+			</h3>
+
+			<p 
+			data-it="Partner digitale della Juventus dal 2023."
+
+			data-fr="Partenaire numérique de la Juventus depuis 2023.">
+
+			Partner digitale della Juventus dal 2023.<br>
+
+			</p>
+
+			<!-- lien séparé -->
+			<a href="https://www.cygames.co.jp/" target="_blank"
+			data-it="Sito ufficiale"
+			data-fr="Site officiel">
+
+			Sito ufficiale
+
+			</a>
+
+		</div>
+
+		<img src="images/logo6.png" alt="Cygames" class="icone-trophee sponsor-img">
+	</div>
+
+    <div class="ligne-trophee">
+		<div class="card-text">
+
+			<h3 data-it="Visit Detroit" data-fr="Visit Detroit">
+				Visit Detroit
+			</h3>
+
+			<p 
+			data-it="Partner turistico della Juventus dal 2024."
+
+			data-fr="Partenaire touristique de la Juventus depuis 2024.">
+
+			Partner turistico della Juventus dal 2024.<br>
+
+			</p>
+
+			<!-- lien séparé -->
+			<a href="https://visitdetroit.com/" target="_blank"
+			data-it="Sito ufficiale"
+			data-fr="Site officiel">
+
+			Sito ufficiale
+
+			</a>
+
+		</div>
+
+		<img src="images/logo7.png" alt="Visit Detroit" class="icone-trophee sponsor-img">
+	</div>
+
+    <div class="ligne-trophee reverse">
+		<div class="card-text">
+
+			<h3 data-it="Enel" data-fr="Enel">
+				Enel
+			</h3>
+
+			<p 
+			data-it="Partner energetico della Juventus dal 2023."
+
+			data-fr="Partenaire énergétique de la Juventus depuis 2023.">
+
+			Partner energetico della Juventus dal 2023.<br>
+	
+			</p>
+
+			<!-- lien séparé -->
+			<a href="https://www.enel.com/" target="_blank"
+			data-it="Sito ufficiale"
+			data-fr="Site officiel">
+
+			Sito ufficiale
+
+			</a>
+
+		</div>
+
+		<img src="images/logo8.png" alt="Enel" class="icone-trophee sponsor-img">
+	</div>
+</section>
+<div id="popup" class="popup-img-full">
+    <img id="popup-content" style="background:white; padding:10px; border-radius:6px; width:600px; height:400px; object-fit:contain;">
+</div>
+
+<script>
+    const popupImages = document.querySelectorAll('.icone-trophee, .sponsor-img');
+    const popup = document.getElementById('popup');
+    const popupContent = document.getElementById('popup-content');
+
+    popupImages.forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => {
+            popupContent.src = img.src;
+            popup.style.display = 'flex';
+        });
+    });
+
+    popup.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
+});
+</script>
+</body>
+<script src="traduction.js"></script>
+</html>

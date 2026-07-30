@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Juventus FC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="menu">
+        <li class="logo-li">
+            <a href="#" id="logo-trigger">
+                <img src="images/juventusblanc.png" alt="Logo Juventus FC" class="logo">
+            </a>
+        </li>
+		<li class="dropdown">
+			<a data-it="Rosa" data-fr="Effectif">Rosa</a>
+			<ul class="submenu">
+				<li><a href="Gardiens.html" data-it="Portieri" data-fr="Gardiens">Portieri</a></li>
+				<li><a href="Défenseurs.html" data-it="Difensori" data-fr="Défenseurs">Difensori</a></li>
+				<li><a href="Milieux.html" data-it="Centrocampisti" data-fr="Milieux">Centrocampisti</a></li>
+				<li><a href="Attaquants.html" data-it="Attaccanti" data-fr="Attaquants">Attaccanti</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="Palmarès.html" data-it="Palmarès" data-fr="Palmarès">
+			Palmarès
+			</a>
+		</li>
+		<li class="dropdown">
+			<a data-it="Maglie" data-fr="Maillots">Maglie</a>
+			<ul class="submenu">
+				<li>
+					<a href="maillots-2026.html" data-it="Maglie 2026" data-fr="Maillots 2026">
+					Maglie 2026
+					</a>
+				</li>
+				<li>
+					<a href="maillots historiques.html" data-it="Maglie storiche" data-fr="Maillots historiques">
+					Maglie storiche
+					</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="Matchs à venir.html" data-it="Prossime partite" data-fr="Matchs à venir">
+            Prossime partite
+			</a>
+		</li>
+		<li>
+			<a href="Histoire.html" data-it="Storia" data-fr="Histoire">
+            Storia
+			</a>
+		</li>
+		
+		<li>
+			<a href="Stade.html" data-it="Stadio" data-fr="Stade">
+            Stadio
+			</a>
+		</li>
+        <li>
+			<a href="Légendes.html" data-it="Leggende" data-fr="Légendes">
+            Leggende
+			</a>
+		</li>
+
+		<li>
+			<a href="Sponsors.html" data-it="Sponsor" data-fr="Sponsors">
+            Sponsor
+			</a>
+		</li>
+
+		<li>
+			<a href="Logos.html" data-it="I Loghi" data-fr="Les logos">
+            I Loghi
+			</a>
+		</li>
+    </ul>
+	<div class="lang-switch">
+		<span>FR</span>
+		<label class="switch">
+			<input type="checkbox" id="lang-toggle">
+			<span class="slider"></span>
+		</label>
+		<span>IT</span>
+	</div>
+</nav>
+<audio id="asse-sound" src="son/musique.mp3"></audio>
+
+<canvas id="confetti-canvas"></canvas>
+
+<h1>LA JUVENTUS</h1>
+<button 
+id="stop-music"
+data-it="Fermare la musica e i coriandoli"
+data-fr="Arrêter la musique et les confettis">
+
+Fermare la musica e i coriandoli
+
+</button>
+
+
+<div class="ligne-trophee">
+    <div class="card-text">
+        <p
+		data-it="La Juventus FC, fondata nel 1897, è molto più di una semplice squadra di calcio: è una vera leggenda dello sport italiano ed europeo. Con la sua iconica maglia bianconera, una storia ricca di successi e il suo stadio moderno, l’Allianz Stadium, la Juventus fa battere il cuore di milioni di tifosi in tutto il mondo. Simbolo di eccellenza, ambizione e vittoria, la Vecchia Signora continua a scrivere la storia del calcio con passione e determinazione."
+
+        data-fr="La Juventus FC, fondée en 1897, est bien plus qu'une simple équipe de football : c'est une véritable légende du sport italien et européen. Avec son célèbre maillot bianconero, une histoire riche en succès et son stade moderne, l’Allianz Stadium, la Juventus fait vibrer des millions de supporters dans le monde entier. Symbole d’excellence, d’ambition et de victoire, la Vieille Dame continue d’écrire l’histoire du football avec passion et détermination.">
+		La Juventus FC, fondata nel 1897, è molto più di una semplice squadra di calcio: è una vera leggenda dello sport italiano ed europeo.
+		Con la sua iconica maglia bianconera, una storia ricca di successi e il suo stadio moderno, l’Allianz Stadium, la Juventus fa battere il cuore di milioni di tifosi in tutto il mondo.
+		Simbolo di eccellenza, ambizione e vittoria, la Vecchia Signora continua a scrivere la storia del calcio con passione e determinazione.
+        </p>
+    </div>
+    <img src="images/stade.jpg" alt="Stade JUVENTUS FC" class="popup-image">
+</div>
+
+<div class="ligne-trophee reverse">
+    <div class="card-text">
+        <p
+		data-it="Fedeli e appassionati, creano un’atmosfera straordinaria allo Allianz Stadium e incarnano l’identità vincente, orgogliosa e determinata della Juventus. 
+		Conosciuti in tutto il mondo, i sostenitori bianconeri rappresentano una vera forza, sempre pronti a sostenere la Vecchia Signora in ogni sfida."
+
+        data-fr="Fidèles et passionnés, ils créent une atmosphère exceptionnelle à l’Allianz Stadium et incarnent l’identité gagnante, fière et déterminée de la Juventus.
+		Connus dans le monde entier, les supporters bianconeri représentent une véritable force, toujours prêts à soutenir la Vieille Dame dans chaque défi.">
+		I tifosi della Juventus FC sono il cuore pulsante del club.
+		Fedeli e appassionati, creano un’atmosfera straordinaria allo Allianz Stadium e incarnano l’identità vincente, orgogliosa e determinata della Juventus. 
+		Conosciuti in tutto il mondo, i sostenitori bianconeri rappresentano una vera forza, sempre pronti a sostenere la Vecchia Signora in ogni sfida.
+        </p>
+    </div>
+    <img src="images/supporters.jpg" alt="SUPPORTERS JUVENTUS FC" class="popup-image">
+</div>
+
+<div class="ligne-trophee">
+    <div class="card-text">
+        <p
+		data-it="La Juventus FC è il club più titolato d’Italia, con i suoi numerosi titoli nazionali che hanno segnato la storia della Serie A.
+		Grazie a giocatori leggendari e a campagne europee memorabili, la Juventus ha costruito una tradizione di eccellenza, diventando uno dei club più prestigiosi e rispettati del calcio mondiale."
+
+        data-fr="La Juventus FC est le club le plus titré d’Italie, avec ses nombreux titres nationaux qui ont marqué l’histoire de la Serie A.
+		Grâce à des joueurs légendaires et à des campagnes européennes mémorables, la Juventus a construit une tradition d’excellence, devenant l’un des clubs les plus prestigieux et respectés du football mondial.">
+		La Juventus FC è il club più titolato d’Italia, con i suoi numerosi titoli nazionali che hanno segnato la storia della Serie A.
+		Grazie a giocatori leggendari e a campagne europee memorabili, la Juventus ha costruito una tradizione di eccellenza, diventando uno dei club più prestigiosi e rispettati del calcio mondiale.
+        </p>
+    </div>
+    <img src="images/equipe.jpg" alt="Équipe JUVENTUS FC" class="popup-image">
+</div>
+
+<div class="ligne-trophee reverse">
+    <div class="card-text">
+        <p
+		data-it="Il palmarès della Juventus FC testimonia la sua grandezza. 
+		I numerosi trofei nazionali, tra cui campionati e coppe, sono la prova della costanza e dell’eccellenza della Juventus nel corso della sua storia. 
+		Grazie a una mentalità vincente e a un livello sempre elevato, la Vecchia Signora si è affermata come uno dei club più dominanti del calcio italiano ed europeo."
+
+        data-fr="Le palmarès de la Juventus FC témoigne de sa grandeur.
+		Les nombreux trophées nationaux, dont les championnats et les coupes, sont la preuve de la constance et de l’excellence de la Juventus au fil de son histoire.
+		Grâce à une mentalité gagnante et à un niveau toujours élevé, la Vieille Dame s’est imposée comme l’un des clubs les plus dominants du football italien et européen.">
+		Il palmarès della Juventus FC testimonia la sua grandezza. 
+		I numerosi trofei nazionali, tra cui campionati e coppe, sono la prova della costanza e dell’eccellenza della Juventus nel corso della sua storia. 
+		Grazie a una mentalità vincente e a un livello sempre elevato, la Vecchia Signora si è affermata come uno dei club più dominanti del calcio italiano ed europeo.
+        </p>
+    </div>
+    <img src="images/coupe-ligue.jpg" alt="Coupe JUVENTUS FC" class="popup-image">
+</div>
+
+<div class="ligne-trophee" style="background-color:white; padding:30px;">
+    <div class="card-text">
+        <h2 data-it="Informazioni importanti" data-fr="Informations importantes">
+		Informazioni importanti
+		</h2>
+        <p
+		data-it="Su questo sito puoi trovare tutte le informazioni più importanti sul club.
+		Scopri la rosa completa e conosci meglio i giocatori della Juventus FC, rivivi i grandi momenti del palmarès, esplora le maglie storiche e attuali, segui le prossime partite, immergiti nella storia del club e delle sue leggende e scopri lo Allianz Stadium attraverso immagini e curiosità."
+
+        data-fr="Sur ce site, vous pouvez trouver toutes les informations les plus importantes sur le club.
+		Découvrez l’effectif complet et apprenez à mieux connaître les joueurs de la Juventus FC, revivez les grands moments du palmarès, explorez les maillots historiques et actuels, suivez les prochains matchs, plongez dans l’histoire du club et de ses légendes, et découvrez l’Allianz Stadium à travers des images et des anecdotes.">
+		Su questo sito puoi trovare tutte le informazioni più importanti sul club.
+		Scopri la rosa completa e conosci meglio i giocatori della Juventus FC, rivivi i grandi momenti del palmarès, esplora le maglie storiche e attuali, segui le prossime partite, immergiti nella storia del club e delle sue leggende e scopri lo Allianz Stadium attraverso immagini e curiosità.</p>
+    </div>
+    <img src="images/yildiz.jpg" alt="Yildiz" class="popup-image">
+</div>
+
+<div id="popup">
+    <img id="popup-img" src="" alt="">
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    const images = document.querySelectorAll('.popup-image');
+    const popup = document.getElementById('popup');
+    const popupImg = document.getElementById('popup-img');
+
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            popup.style.display = 'flex';
+            popupImg.src = img.src;
+        });
+    });
+
+    popup.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
+
+    const logo = document.getElementById('logo-trigger');
+    const audio = document.getElementById('asse-sound');
+    const canvas = document.getElementById('confetti-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let confetti = [];
+    let confettiActive = false;
+    const confettiCount = 150;
+
+    function randomRange(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    function initConfetti() {
+        confetti = [];
+        for (let i = 0; i < confettiCount; i++) {
+            let colorRand = Math.random();
+            let color;
+            if (colorRand < 0.6) color = "#C6A96B";
+            else if (colorRand < 0.8) color = "white";
+            else color = "#AC8D5C";
+
+            confetti.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height - canvas.height,
+                r: randomRange(2, 6),
+                d: randomRange(1, confettiCount),
+                color: color,
+                tilt: randomRange(-10, 10),
+                tiltAngleIncrement: randomRange(0.05, 0.12),
+                tiltAngle: 0
+            });
+        }
+    }
+
+    function drawConfetti() {
+        if (!confettiActive) return;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        confetti.forEach(c => {
+            ctx.beginPath();
+            ctx.lineWidth = c.r;
+            ctx.strokeStyle = c.color;
+            ctx.moveTo(c.x + c.tilt + c.r / 2, c.y);
+            ctx.lineTo(c.x + c.tilt, c.y + c.tilt + c.r / 2);
+            ctx.stroke();
+        });
+        updateConfetti();
+    }
+
+    function updateConfetti() {
+        confetti.forEach(c => {
+            c.tiltAngle += c.tiltAngleIncrement;
+            c.y += (Math.cos(c.d) + 3 + c.r / 2) / 2;
+            c.tilt = Math.sin(c.tiltAngle) * 15;
+            if (c.y > canvas.height) {
+                c.y = -10;
+                c.x = Math.random() * canvas.width;
+            }
+        });
+        requestAnimationFrame(drawConfetti);
+    }
+
+    logo.addEventListener('click', (e) => {
+        e.preventDefault();
+        audio.play();
+        confettiActive = true;
+        initConfetti();
+        drawConfetti();
+    });
+
+    const stopMusicBtn = document.getElementById('stop-music');
+    stopMusicBtn.addEventListener('click', () => {
+        audio.pause();
+        audio.currentTime = 0;
+        confettiActive = false;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    });
+
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+
+});
+</script>
+
+</body>
+<script src="traduction.js"></script>
+</html>

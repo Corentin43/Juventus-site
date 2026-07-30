@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Juventus FC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="menu">
+        <li class="logo-li">
+            <a href="index.html" id="logo-trigger">
+                <img src="images/juventusblanc.png" alt="Logo Juventus FC" class="logo">
+            </a>
+        </li>
+		<li class="dropdown">
+			<a data-it="Rosa" data-fr="Effectif">Rosa</a>
+			<ul class="submenu">
+				<li><a href="Gardiens.html" data-it="Portieri" data-fr="Gardiens">Portieri</a></li>
+				<li><a href="Défenseurs.html" data-it="Difensori" data-fr="Défenseurs">Difensori</a></li>
+				<li><a href="Milieux.html" data-it="Centrocampisti" data-fr="Milieux">Centrocampisti</a></li>
+				<li><a href="Attaquants.html" data-it="Attaccanti" data-fr="Attaquants">Attaccanti</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="Palmarès.html" data-it="Palmarès" data-fr="Palmarès">
+			Palmarès
+			</a>
+		</li>
+		<li class="dropdown">
+			<a data-it="Maglie" data-fr="Maillots">Maglie</a>
+			<ul class="submenu">
+				<li>
+					<a href="maillots-2026.html" data-it="Maglie 2026" data-fr="Maillots 2026">
+					Maglie 2026
+					</a>
+				</li>
+				<li>
+					<a href="maillots historiques.html" data-it="Maglie storiche" data-fr="Maillots historiques">
+					Maglie storiche
+					</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="Matchs à venir.html" data-it="Prossime partite" data-fr="Matchs à venir">
+            Prossime partite
+			</a>
+		</li>
+		<li>
+			<a href="Histoire.html" data-it="Storia" data-fr="Histoire">
+            Storia
+			</a>
+		</li>
+		
+		<li>
+			<a href="Stade.html" data-it="Stadio" data-fr="Stade">
+            Stadio
+			</a>
+		</li>
+        <li>
+			<a href="Légendes.html" data-it="Leggende" data-fr="Légendes">
+            Leggende
+			</a>
+		</li>
+
+		<li>
+			<a href="Sponsors.html" data-it="Sponsor" data-fr="Sponsors">
+            Sponsor
+			</a>
+		</li>
+
+		<li>
+			<a href="Logos.html" data-it="I Loghi" data-fr="Les logos">
+            I Loghi
+			</a>
+		</li>
+    </ul>
+	<div class="lang-switch">
+		<span>FR</span>
+		<label class="switch">
+			<input type="checkbox" id="lang-toggle">
+			<span class="slider"></span>
+		</label>
+		<span>IT</span>
+	</div>
+</nav>
+
+<table>
+    <thead>
+        <tr>
+            <th data-it="Data" data-fr="Date">Data</th>
+            <th data-it="Ora" data-fr="Heure">Ora</th>
+            <th data-it="Partita" data-fr="Match">Partita</th>
+            <th data-it="Competizione" data-fr="Compétition">Competizione</th>
+            <th data-it="Risultato" data-fr="Résultat">Risultato</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td Data-label="Data"><span>31/07/26</span></td>
+            <td Data-label="Ora"><span>18:00</span></td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > 
+                    Juventus VS Nizza 
+                    <img src="images/Symbole1.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione">
+                <span data-it="Amichevole" data-fr="Match amical">Amichevole</span>
+            </td>
+            <td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td Data-label="Data"><span>05/08/26</span></td>
+            <td Data-label="Ora"><span>13:30</span></td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole2.png" > Chelsea VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione">
+                <span data-it="Amichevole" data-fr="Match amical">Amichevole</span>
+            </td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>08/08/26</span></td>
+            <td Data-label="Ora"><span>13:00</span></td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Inter <img src="images/Symbole3.png" >
+                </span>
+            </td>
+           <td Data-label="Competizione">
+                <span data-it="Amichevole" data-fr="Match amical">Amichevole</span>
+            </td>
+		   <td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>11/08/26</span></td>
+            <td Data-label="Ora"><span>12:00</span></td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole4.png" > Palermo VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione">
+                <span data-it="Amichevole" data-fr="Match amical">Amichevole</span>
+            </td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>17/08/26</span></td>
+            <td Data-label="Ora"><span>18:00</span></td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Juventus Next Gen <img src="images/Symbole5.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione">
+                <span data-it="Amichevole" data-fr="Match amical">Amichevole</span>
+            </td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>23/08/26</span></td>
+            <td Data-label="Ora"><span>18:30</span></td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole6.png" > Frosinone VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>29/08/26</span></td>
+            <td Data-label="Ora"><span>20:45</span></td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Parma <img src="images/Symbole7.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>06/09/26</span></td>
+            <td Data-label="Ora"><span>20:45</span></td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS AC Milan <img src="images/Symbole8.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>12/09/26</span></td>
+            <td Data-label="Ora"><span>18:00</span></td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole9.png" > Sassuolo VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>20/09/26</span></td>
+            <td Data-label="Ora"><span>18:00</span></td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Atalanta <img src="images/Symbole10.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>10/10/26</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole11.png" > Cagliari VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>17/10/26</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Lazio <img src="images/Symbole12.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>24/10/26</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole13.png" > Lecce VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>27/10/26</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole14.png" > Genoa VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>31/10/26</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Napoli <img src="images/Symbole15.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>07/11/26</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole16.png" > Fiorentina VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>21/11/26</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus FC VS Venezia <img src="images/Symbole17.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>28/11/26</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole18.png" > Como VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>05/12/26</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Udinese <img src="images/Symbole19.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>12/12/26</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Monza <img src="images/Symbole20.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>19/12/26</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole21.png" > Roma VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+        
+		<tr>
+            <td Data-label="Data"><span>02/01/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole22.png" > Bologna VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td Data-label="Data"><span>05/01/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Torino <img src="images/Symbole23.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>09/01/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+					<img src="images/Symbole3.png" > Inter VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td Data-label="Data"><span>16/01/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Genoa <img src="images/Symbole14.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td Data-label="Data"><span>23/01/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Cagliari <img src="images/Symbole11.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td Data-label="Data"><span>30/01/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole8.png" > AC Milan VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td Data-label="Data"><span>06/02/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Sassuolo <img src="images/Symbole9.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td Data-label="Data"><span>13/02/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole15.png" > Napoli VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td Data-label="Data"><span>20/02/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Bologna <img src="images/Symbole22.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>27/02/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole20.png" > Monza VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td Data-label="Data"><span>06/03/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Roma <img src="images/Symbole21.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>13/03/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole12.png" > Lazio VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>20/03/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Como <img src="images/Symbole18.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>03/04/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole23.png" > Torino VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>10/04/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Lecce <img src="images/Symbole13.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>17/04/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole17.png" > Venezia VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td Data-label="Data"><span>24/04/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Fiorentina <img src="images/Symbole16.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td Data-label="Data"><span>01/05/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole10.png" > Atalanta VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td Data-label="Data"><span>08/05/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole19.png" > Udinese VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td Data-label="Data"><span>15/05/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Inter <img src="images/Symbole3.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td Data-label="Data"><span>22/05/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/Symbole7.png" > Parma VS Juventus <img src="images/juve.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+		
+        <tr>
+            <td Data-label="Data"><span>29/05/27</span></td>
+            <td Data-label="Ora">
+    <span data-it="DA DEFINIREE" data-fr="À définir">
+        DA DEFINIREE
+    </span>
+</td>
+            <td Data-label="Partita">
+                <span class="Partita">
+                    <img src="images/juve.png" > Juventus VS Frosinone <img src="images/Symbole6.png" >
+                </span>
+            </td>
+            <td Data-label="Competizione"><span>Serie A <img src="images/seria.png" ></span></td>
+			<td Data-label="Risultato">
+                <span data-it="Prossimamente" data-fr="À venir">Prossimamente</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<script>
+window.onload = function() {
+
+    document.querySelectorAll("tbody tr").forEach(tr => {
+
+        let texte = tr.innerText.toLowerCase();
+        texte = texte.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+        const tds = tr.querySelectorAll("td");
+
+        // =========================
+        // ⚽ JUVENTUS
+        // =========================
+        if (texte.includes("juventus") && texte.includes("vs")) {
+
+            let domicile = texte.indexOf("juventus") < texte.indexOf("vs");
+
+            // 👉 Data + Ora
+            for (let i = 0; i <= 1; i++) {
+                if (tds[i]) {
+                    tds[i].style.background = "white";
+                    tds[i].style.color = "#AC8D5C";
+                    tds[i].style.animation = "none";
+                }
+            }
+
+            // 👉 Partita
+            let PartitaCell = tds[2];
+            if (PartitaCell) {
+                PartitaCell.classList.add("degrade");
+
+			if (domicile) {
+				// 🔥 ROSE (#F8ACC5)
+				PartitaCell.style.background =
+					"linear-gradient(90deg, rgba(172,141,92,0.9), rgba(172,141,92,0.6), transparent)";
+				} else {
+                    // 🔥 COULEUR JUVE (#AC8D5C)
+                    PartitaCell.style.background =
+                        "linear-gradient(90deg, rgba(248,172,197,0.9), rgba(248,172,197,0.6), transparent)";
+                }
+            }
+        }
+
+        // =========================
+        // 🏆 COMPETITION
+        // =========================
+        if (tds[3]) {
+
+            tds[3].classList.add("degrade");
+
+            if (texte.includes("amichevole")) {
+                tds[3].style.background = "linear-gradient(90deg, red, darkred)";
+                tds[3].style.color = "white";
+            } 
+			else if (texte.includes("serie a")) {
+				tds[3].style.background = "linear-gradient(90deg, blue, darkblue)";
+				tds[3].style.color = "white";
+			}
+        }
+
+    });
+
+}
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
+});
+</script>
+
+
+
+</body>
+<script src="traduction.js"></script>
+</html>
