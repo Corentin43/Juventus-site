@@ -771,10 +771,6 @@ input:checked + .slider::before {
         position: static;
         display: none;
     }
-
-    .dropdown:hover .submenu {
-        display: block;
-    }
 	.icone-trophee {
         width: 80%;
         max-width: 300px;
