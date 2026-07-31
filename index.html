@@ -283,12 +283,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     logo.addEventListener('click', (e) => {
-        e.preventDefault();
-        audio.play();
-        confettiActive = true;
-        initConfetti();
-        drawConfetti();
-    });
+  	  e.preventDefault();
+
+    // ferme le menu mobile
+  	  menu.classList.remove('show');
+
+    // ferme les sous-menus
+   	 document.querySelectorAll(".submenu").forEach(s => {
+        s.style.display = "none";
+  	  });
+
+    // lance la musique + confettis
+  	  audio.play();
+  	  confettiActive = true;
+  	  initConfetti();
+  	  drawConfetti();
+	});
 
     const stopMusicBtn = document.getElementById('stop-music');
     stopMusicBtn.addEventListener('click', () => {
