@@ -747,10 +747,11 @@ input:checked + .slider::before {
     .ligne-trophee {
         flex-direction: column;
         text-align: center;
-        width: 90%;
-        padding: 20px 10px;
-        margin: 25px auto;
+        width: 85%;
+        padding: 15px;
+        margin: 20px auto;
         box-sizing: border-box;
+        border-radius: 15px;
     }
 
     .card-text {
