@@ -774,4 +774,18 @@ input:checked + .slider::before {
     .dropdown:hover .submenu {
         display: block;
     }
+	.icone-trophee {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        margin-left: 0;
+        object-fit: contain;
+    }
+
+    .popup-image {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        object-fit: contain;
+    }
 }	
