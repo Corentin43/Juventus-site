@@ -1282,7 +1282,7 @@ input:checked + .slider::before {
    ========================= */
 
 #splash-screen {
-    display: none;
+    display: none !important;
 }
 
 @media (max-width: 768px) {
