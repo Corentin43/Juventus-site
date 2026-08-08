@@ -347,6 +347,15 @@ if ("serviceWorker" in navigator) {
     });
 }
 </script>
+<script>
+setTimeout(() => {
+    const splash = document.getElementById("splash-screen");
+
+    if (splash) {
+        splash.style.display = "none";
+    }
+}, 3000);
+</script>
 </body>
 <script src="traduction.js"></script>
 </html>
