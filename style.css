@@ -1277,6 +1277,4 @@ input:checked + .slider::before {
         background-image: none;
         background-color: black;
     }
-html {
-    visibility: visible;
-}
+
