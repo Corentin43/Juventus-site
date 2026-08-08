@@ -179,73 +179,7 @@ data-fr="Découvrez les moments les plus importants de l’histoire de la Juvent
          data-video="https://www.youtube.com/watch?v=wHz8yEzc_G0">
 </div>
 </section>
-<script>
-const videoLinks = document.querySelectorAll('.video-link');
-
-videoLinks.forEach(img => {
-    img.addEventListener('click', () => {
-        const url = img.dataset.video;
-        window.open(url, '_blank'); 
-    });
-});
-</script>
-<script>
-const poteauxImg = document.querySelector('.poteaux-carres');
-
-poteauxImg.addEventListener('click', () => {
-    poteauxImg.src = 'gif/action poteaux carrés.gif'; 
-});
-</script>
-<div id="popup" class="popup-img-full">
-    <img id="popup-content">
-</div>
-
-<script>
-    const popupImages = document.querySelectorAll('.icone-trophee:not(.poteaux-carres):not(.video-link), .player-photo:not(.poteaux-carres):not(.video-link), .player-photo-2, .geoffroy, .battiston-portrait');
-
-    const popup = document.getElementById('popup');
-    const popupContent = document.getElementById('popup-content');
-
-    popupImages.forEach(img => {
-        img.style.cursor = 'pointer'; 
-        img.addEventListener('click', () => {
-            popupContent.src = img.src;
-            popup.style.display = 'flex';
-        });
-    });
-
-    popup.addEventListener('click', () => {
-        popup.style.display = 'none';
-    });
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    const menu = document.querySelector('.menu');
-
-    hamburger.addEventListener('click', () => {
-        menu.classList.toggle('show');
-    });
-});
-</script>
-<script>
-document.querySelectorAll(".dropdown > a").forEach(menu => {
-    menu.addEventListener("click", function(e) {
-        e.preventDefault();
-
-        let submenu = this.nextElementSibling;
-
-        document.querySelectorAll(".submenu").forEach(s => {
-            if (s !== submenu) {
-                s.style.display = "none";
-            }
-        });
-
-        submenu.style.display = 
-            submenu.style.display === "block" ? "none" : "block";
-    });
-});
-</script>
+<script src="script.js"></script>
 </body>
 <script src="traduction.js"></script>
 </html>
