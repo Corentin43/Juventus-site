@@ -1,5 +1,18 @@
-```javascript
 document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================================
+       MENU HAMBURGER
+       ========================================= */
+
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.querySelector(".menu");
+
+    if (hamburger && menu) {
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("show");
+        });
+    }
+
 
     /* =========================================
        MENU DÉROULANT
@@ -34,9 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("click", function (event) {
 
         if (!event.target.closest(".dropdown")) {
+
             document.querySelectorAll(".submenu").forEach(menu => {
                 menu.style.display = "none";
             });
+
         }
 
     });
@@ -63,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("language", language);
     }
 
-
     if (langToggle) {
 
         const savedLanguage = localStorage.getItem("language") || "it";
@@ -83,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =========================================
-       IMAGES / POPUPS
+       POPUP DES IMAGES
        ========================================= */
 
     document.querySelectorAll(".popup-img").forEach(image => {
@@ -112,6 +126,83 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =========================================
+       ANCIEN SYSTÈME DE POPUP
+       Pour les pages utilisant .icone-trophee,
+       .player-photo, etc.
+       ========================================= */
+
+    const oldPopup = document.getElementById("popup");
+    const oldPopupContent = document.getElementById("popup-content");
+
+    if (oldPopup && oldPopupContent) {
+
+        const popupImages = document.querySelectorAll(
+            ".icone-trophee:not(.poteaux-carres):not(.video-link), " +
+            ".player-photo:not(.poteaux-carres):not(.video-link), " +
+            ".player-photo-2, " +
+            ".geoffroy, " +
+            ".battiston-portrait"
+        );
+
+        popupImages.forEach(image => {
+
+            image.style.cursor = "pointer";
+
+            image.addEventListener("click", () => {
+
+                oldPopupContent.src = image.src;
+
+                oldPopup.style.display = "flex";
+
+            });
+
+        });
+
+        oldPopup.addEventListener("click", () => {
+
+            oldPopup.style.display = "none";
+
+        });
+    }
+
+
+    /* =========================================
+       VIDÉOS
+       ========================================= */
+
+    document.querySelectorAll(".video-link").forEach(image => {
+
+        image.addEventListener("click", () => {
+
+            const url = image.dataset.video;
+
+            if (url) {
+                window.open(url, "_blank");
+            }
+
+        });
+
+    });
+
+
+    /* =========================================
+       POTEAUX CARRÉS
+       ========================================= */
+
+    const poteauxImg = document.querySelector(".poteaux-carres");
+
+    if (poteauxImg) {
+
+        poteauxImg.addEventListener("click", () => {
+
+            poteauxImg.src = "gif/action poteaux carrés.gif";
+
+        });
+
+    }
+
+
+    /* =========================================
        FERMETURE AVEC ÉCHAP
        ========================================= */
 
@@ -125,6 +216,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 popup.remove();
             }
 
+            if (oldPopup) {
+                oldPopup.style.display = "none";
+            }
+
             document.querySelectorAll(".submenu").forEach(menu => {
                 menu.style.display = "none";
             });
@@ -133,27 +228,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-
-    /* =========================================
-       LOGO
-       ========================================= */
-
-    const logoTrigger = document.getElementById("logo-trigger");
-
-    if (logoTrigger) {
-
-        logoTrigger.addEventListener("click", function (event) {
-
-            /*
-             * Le logo reste un lien normal vers index.html.
-             *
-             * Aucun lancement de musique.
-             * Aucun confetti.
-             */
-
-        });
-
-    }
-
 });
-```
