@@ -1301,10 +1301,10 @@ input:checked + .slider::before {
         animation: splashBackground 3s steps(1) forwards;
     }
 
-    #splash-screen img {
-        width: 150px;
-        height: 150px;
-        object-fit: contain;
+    #splash-screen .splash-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
     }
 
     @keyframes splashBackground {
