@@ -15,10 +15,6 @@
 <meta name="theme-color" content="#000000">
 </head>
 <body>
-	
-<div id="splash-screen">
-    <img class="splash-logo" src="images/juventusblanc.png" alt="Juventus">
-</div>
 
 <nav>
     <button class="hamburger" id="hamburger">
@@ -352,15 +348,6 @@ if ("serviceWorker" in navigator) {
             .catch(error => console.log("Erreur Service Worker :", error));
     });
 }
-</script>
-<script>
-setTimeout(() => {
-    const splash = document.getElementById("splash-screen");
-
-    if (splash) {
-        splash.style.display = "none";
-    }
-}, 3000);
 </script>
 </body>
 <script src="traduction.js"></script>
