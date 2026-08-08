@@ -1309,20 +1309,47 @@ input:checked + .slider::before {
 
     @keyframes splashBackground {
 
-        0% {
-            background-color: black;
-        }
+    0% {
+        background-color: black;
+    }
 
-        33.33% {
-            background-color: pink;
-        }
+    10% {
+        background-color: #C6A96B;
+    }
 
-        66.66% {
-            background-color: #C6A96B;
-        }
+    20% {
+        background-color: black;
+    }
 
-        100% {
-            background-color: #C6A96B;
-        }
+    30% {
+        background-color: pink;
+    }
+
+    40% {
+        background-color: black;
+    }
+
+    50% {
+        background-color: #C6A96B;
+    }
+
+    60% {
+        background-color: pink;
+    }
+
+    70% {
+        background-color: black;
+    }
+
+    80% {
+        background-color: #C6A96B;
+    }
+
+    90% {
+        background-color: pink;
+    }
+
+    100% {
+        background-color: black;
     }
 }
