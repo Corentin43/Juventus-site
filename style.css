@@ -1277,5 +1277,52 @@ input:checked + .slider::before {
         background-image: none;
         background-color: black;
     }
+/* =========================
+   ÉCRAN DE LANCEMENT PWA
+   ========================= */
 
+#splash-screen {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    #splash-screen {
+        position: fixed;
+        inset: 0;
+        z-index: 999999;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: black;
+
+        animation: splashBackground 3s steps(1) forwards;
+    }
+
+    #splash-screen img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+    }
+
+    @keyframes splashBackground {
+
+        0% {
+            background-color: black;
+        }
+
+        33.33% {
+            background-color: pink;
+        }
+
+        66.66% {
+            background-color: #C6A96B;
+        }
+
+        100% {
+            background-color: #C6A96B;
+        }
+    }
 }
