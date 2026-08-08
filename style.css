@@ -1353,3 +1353,6 @@ input:checked + .slider::before {
         background-color: black;
     }
 }
+html {
+    visibility: visible;
+}
